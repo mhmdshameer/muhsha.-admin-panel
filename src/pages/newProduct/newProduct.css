@@ -1,0 +1,85 @@
+.newProduct {
+  flex: 4;
+  margin: 0 30px;
+
+}
+
+.newProductForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newProductImg {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.newUploadImg {
+  width: 100%;
+  height: 100%px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.newProductImg > label {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #3e4e6171;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newProductUpload label:hover {
+  background-color: #3e4e61e6;
+}
+
+.newProductDetails{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.newProductDetails > label {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.newProductDetails > input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.newProductDetails > select {
+   padding: 10px;
+}
+
+.newProductUpdateButton {
+  margin-top: 10px;
+  width: 150px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newProductUpdateButton:hover{
+   background-color: #67ca6a ;
+}

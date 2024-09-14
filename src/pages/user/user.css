@@ -169,13 +169,13 @@
     height: 25px;
     right: 5px;
     bottom: 5px;
-    background-color: #3e4e6171; /* Your preferred subtle color */
+    background-color: #3e4e6171; 
     color: white;
     border-radius: 5px;
     cursor: pointer;
   }
 
-  .userUpdateRight label:hover {
+  .userUpdateUpload label:hover {
     background-color: #3e4e61e6;
   }
 
