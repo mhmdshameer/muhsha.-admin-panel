@@ -1,13 +1,14 @@
-.userList{
+
+.productList{
     flex:4;
 }
 
-.userListUser{
+.productListItem{
     display: flex;
     align-items: center;
 }
 
-.userListImage{
+.productListImage{
     width: 32px;
     height: 32px;
     border-radius: 50%;

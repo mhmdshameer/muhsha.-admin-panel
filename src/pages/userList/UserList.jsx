@@ -1,5 +1,5 @@
-import { Delete, Edit } from "@mui/icons-material";
 import "./userList.css";
+import { Delete, Edit } from "@mui/icons-material";
 import { DataGrid } from "@mui/x-data-grid";
 import { userRows } from "../../dummyData";
 import { Link } from "react-router-dom";
@@ -43,7 +43,7 @@ export default function UserList() {
       renderCell: (params)=>{
         return (
           <>
-          <Link to={"/users/"+params.row.id}>
+          <Link to={"/user/"+params.row.id}>
             <button className="button edit"> <Edit/> </button>
           </Link>
             <button className="button delete" onClick={()=> handleDelete(params.row.id)}> <Delete/> </button>
