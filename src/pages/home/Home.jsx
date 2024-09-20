@@ -1,7 +1,6 @@
 import Chart from "../../components/chart/Chart";
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import "./home.css";
-import { userData } from "../../dummyData";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 import WidgetLg from "../../components/widgetLg/WidgetLg";
 import { useEffect, useMemo, useState } from "react";
@@ -31,7 +30,7 @@ const Home = () => {
   useEffect(() => {
     const getStats = async () => {
       try {
-        const res = await userRequest.get("/users.stats");
+        const res = await userRequest.get("/users/stats");
         res.data.map((item) =>
           setStats((prev) => [
             ...prev,
@@ -42,12 +41,11 @@ const Home = () => {
     };
     getStats();
   }, [MONTHS]);
-  console.log(stats)
   return (
     <div className="home">
       <FeaturedInfo />
       <Chart
-        data={userData}
+        data={stats}
         title="User Analytics"
         grid
         dataKey="Active User"

@@ -22,7 +22,7 @@ const WidgetSm = () => {
       <ul className="widgetSmList">
       {users.map( user =>(
 
-        <li className="widgetSmListItem" id={user._id}>
+        <li className="widgetSmListItem" key={user._id}>
           <img
             src={user.img || "/img/noAvatar.avif"}
             alt="Staff img"
