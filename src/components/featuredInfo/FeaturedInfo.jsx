@@ -23,7 +23,7 @@ const FeaturedInfo = () => {
       <div className="featuredItem">
         <span className="featuredTitle">Revanue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">${income}</span>
+          <span className="featuredMoney">${income[1]?.total}</span>
           <span className="featuredMoneyRate">
             {perc}%{" "}
             {perc > 0 ? (

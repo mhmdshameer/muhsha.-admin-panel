@@ -33,4 +33,9 @@
 .button.delete{
     background-color: #E6B8B8;
     color: #333333;
+    transition: color 0.1s ease;
 }
+
+.button.delete:hover {
+    color: #cc4c4c;
+  }

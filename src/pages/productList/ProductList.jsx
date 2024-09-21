@@ -14,7 +14,6 @@ export default function ProductList() {
   }, [dispatch]);
   
   const products = useSelector((state) => state.product.products);
-  console.log(products)
 
 
   const handleDelete = (id) => {
@@ -58,7 +57,7 @@ export default function ProductList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/product/" + params.row.id}>
+            <Link to={"/product/" + params.row._id}>
               <button className="button edit">
                 {" "}
                 <Edit />{" "}
@@ -66,7 +65,7 @@ export default function ProductList() {
             </Link>
             <button
               className="button delete"
-              onClick={() => handleDelete(params.row.id)}
+              onClick={() => handleDelete(params.row._id)}
             >
               {" "}
               <Delete />{" "}
