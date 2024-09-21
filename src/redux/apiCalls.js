@@ -31,5 +31,5 @@ export const deleteProduct = async (id, dispatch) =>{
     dispatch(deleteProductSuccess(res.data));
   }catch(err){
     dispatch(deleteProductFailure())
-  }
+  }
 }
