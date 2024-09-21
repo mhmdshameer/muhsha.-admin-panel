@@ -8,7 +8,7 @@ export default function NewProduct() {
       <form className="newProductForm">
         <div className="newProductImg">
           <img
-            src="/img/noAvatar.avif"
+            src="/img/noImage.jpg"
             alt="product"
             className="newUploadImg"
           />
@@ -20,12 +20,16 @@ export default function NewProduct() {
         <div className="newProductDetails">
           <label>Product Name</label>
           <input type="text" placeholder="Product Name" />
+          <label>Description</label>
+          <input type="text" placeholder="Description" />
+          <label>Category</label>
+          <input type="text" placeholder="Category" />
+          <label>Price</label>
+          <input type="text" placeholder="Price" />
           <label>stock</label>
-          <input type="text" placeholder="Stock" />
-          <label>Active</label>
-          <select name="active" id="active">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+          <select>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
           </select>
         </div>
 

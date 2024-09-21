@@ -39,9 +39,10 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  transform: background-color 0.3s ease;
 }
 
-.newProductUpload label:hover {
+.newProductImg > label:hover {
   background-color: #3e4e61e6;
 }
 
