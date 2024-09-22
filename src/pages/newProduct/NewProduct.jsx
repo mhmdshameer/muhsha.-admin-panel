@@ -1,4 +1,4 @@
-import { Category, Publish } from "@mui/icons-material";
+import {  Publish } from "@mui/icons-material";
 import "./newProduct.css";
 import { useState } from "react";
 import {
@@ -10,7 +10,6 @@ import {
 import app from "../../firebase";
 import { addProduct } from "../../redux/apiCalls";
 import { useDispatch } from "react-redux";
-
 export default function NewProduct() {
   const [input, setInput] = useState({});
   const [file, setFile] = useState(null);
@@ -107,9 +106,9 @@ export default function NewProduct() {
           />
           <label>Category</label>
           <input
-            name="category"
+            name="categories"
             type="text"
-            placeholder="Category"
+            placeholder="Categories"
             onChange={handleCat}
           />
           <label>Color</label>
