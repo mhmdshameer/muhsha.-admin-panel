@@ -106,6 +106,10 @@ export default function Product() {
             <input type="text" value={product.title} />
             <label>Product Description</label>
             <input type="text" value={product.desc} />
+            <label>Product Color</label>
+            <input type="text" value={product.color} />
+            <label>Product Size</label>
+            <input type="text" value={product.size} />
             <label>Price</label>
             <input type="text" value={product.price} />
             <label>In stock</label>

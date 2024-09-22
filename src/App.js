@@ -10,12 +10,15 @@ function App() {
   const isAdmin = user ? user.isAdmin : false;
   return (
     <Routes>
-      {isAdmin && (
+      {isAdmin ?(
         <>
           <Route path="/*" element={<PageRoutes />} />
         </>
-      )}
-      <Route path="/login" element={<Login />} />
+      ): <Route path="/login" />}
+      
+        <Route path="/login" element={<Login />} />
+     
+      
     </Routes>
   );
 }
